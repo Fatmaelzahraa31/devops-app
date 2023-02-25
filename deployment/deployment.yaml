@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: omar20001/project:vtag
+          image: omar20001/project:v1
           ports:
             - containerPort: 8080
           env:
