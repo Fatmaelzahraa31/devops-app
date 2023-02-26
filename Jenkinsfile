@@ -10,9 +10,9 @@ pipeline {
 
                 sh """
                     cd backend-app
-                    docker build . -t omar20001/project:v$BUILD_NUMBER
+                    docker build . -t amgademad/apps:v$BUILD_NUMBER
                     docker login -u ${USERNAME} -p ${PASSWORD}
-                    docker push omar20001/project:v$BUILD_NUMBER
+                    docker push amgademad/apps:v$BUILD_NUMBER
                     cd ..
                 """
                 }
